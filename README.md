@@ -1,2 +1,1 @@
-# twitter-demo-frontend
-Twitter clone on React
+Я ОБЕЩАЮ ЗАДАВАТЬ ЛЮБЫЕ ВОПРОСЫ, ДАЖЕ ЕСЛИ МОЕ ЭГОИЧКО ПОСЧИТАЕТ ИХ ГЛУПЫМИ

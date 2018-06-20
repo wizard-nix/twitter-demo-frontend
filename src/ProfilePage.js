@@ -1,14 +1,12 @@
 import React from 'react';
-import {
-  Route,
-  Redirect,
-  BrowserRouter as Router,
-  Switch,
-} from 'react-router-dom';
 import Helmet from 'react-helmet';
-import ProfilePage from './ProfilePage';
+import Header from './components/Header';
+import ProfileImg from './components/ProfileImg';
+import ProfileStat from './components/ProfileStat';
+import ProfileBio from './components/ProfileBio';
+import Stream from './components/Stream';
 
-const App = () => (
+const ProfilePage = () => (
   <div>
     <Helmet
       title="Every Interaction (@EveryInteract) on Twitter"
@@ -19,13 +17,11 @@ const App = () => (
         },
       ]}
     />
-    <Router>
-      <Switch>
-        <Route path="/everyinteract" component={ProfilePage} />
-        <Redirect from="/" to="/everyinteract" />
-      </Switch>
-    </Router>
+    <Header />
+    <ProfileImg />
+    <ProfileStat />
+    <ProfileBio />
   </div>
 );
 
-export default App;
+export default ProfilePage;

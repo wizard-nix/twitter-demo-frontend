@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {NavLink} from 'react-router-dom';
 
 const Wrapper = styled.div`
   padding-top: 18px;
@@ -7,7 +8,7 @@ const Wrapper = styled.div`
   padding-left: 16px;
 `;
 
-const Link = styled.a`
+const Link = styled (NavLink)`
   line-height: 1;
   font-size: 18px;
   text-align: center;
@@ -15,14 +16,15 @@ const Link = styled.a`
   margin-right: 35px;
   color: ${props => (props.active ? '#14171a' : '#1da1f2')};
   cursor: ${props => (props.active ? 'default' : 'pointer')};
+  text-decoration: none;
 `;
 
 const NavProfile = () => {
   return (
     <Wrapper>
-      <Link active>Tweets</Link>
-      <Link>Tweets & replies</Link>
-      <Link>Media</Link>
+      <Link to="/" active>Tweets</Link>
+      <Link to="/everyinteract/replies">Tweets & replies</Link>
+      <Link to="/everyinteract/media">Media</Link>
     </Wrapper>
   );
 };

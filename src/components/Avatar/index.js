@@ -4,9 +4,8 @@ import styled from 'styled-components';
 const avatar = `${process.env.PUBLIC_URL}/avatar.png`;
 
 const Img = styled.img`
-height: ${props => (props.small ? '26px' : '26px')};
-margin: 0 5px;
-cursor: pointer;
+  height: 26px;
+  margin: 0 5px;cursor: pointer;
 `;
 
 const Avatar = props => <Img src={avatar} alt="Avatar" />;

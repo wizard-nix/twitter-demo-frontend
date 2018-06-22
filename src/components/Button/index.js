@@ -9,10 +9,11 @@ const TwButton = styled.button`
   border: none;
   cursor: pointer;
   border-radius:100px;
-width:72px;
-height: 32px;
-color: #fff;
-font-style: Bold;
+  font-weight: bold;
+  width:72px;
+  height: 32px;
+  color: #fff;
+  font-style: Bold;
 `;
 
 const Button = props => <TwButton>Tweet</TwButton>;

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import styled from 'styled-components';
 
 const Img = styled.img`
-cursor: pointer;
+  cursor: pointer;
 `;
 
 const Logo = () => <Img src={logo} alt="Logo Twitter" />;

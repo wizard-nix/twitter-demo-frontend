@@ -5,9 +5,9 @@ import Avatar from '../Avatar';
 import Button from '../Button';
 
 const Wrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Input = styled.input`
@@ -30,4 +30,5 @@ const Search = props => (
     <Button />
   </Wrapper>
 );
+
 export default Search;

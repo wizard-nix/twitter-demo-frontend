@@ -9,23 +9,8 @@ const Wrapper = styled.main`
   height: 59px;
 `;
 
-const Navigation = styled.span``;
-const Label = styled.span`
-  display: block;
-  color: #657786;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-`;
-const Value = styled.span`
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  color: ${props => (props.active ? '#1da1f2' : '#66757f')};
-  &:hover,
-  &.active & {
-    color: #1da1f2;
-  }
+const Navigation = styled.span`
+  padding-left:25
 `;
 const Info = ({active, amount}) => <Value active={active}>{amount}</Value>;
 
@@ -77,12 +62,33 @@ const Button = styled.button`
   border: 2px solid #1da1f2;
   top: 0;
   right: 0;
+  cursor:pointer;
 `;
 const More = styled.img`
   margin-left: 18px;
   top: 0;
   right: 0;
+  cursor:pointer;
 `;
+
+const Label = styled.span`
+  display: block;
+  color: #657786;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+`;
+const Value = styled.span`
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: ${props => (props.active ? '#1da1f2' : '#66757f')};
+  &:hover,
+  &.active & {
+    color: #1da1f2;
+  }
+`;
+
 const routes = [
   {
     path: '/',

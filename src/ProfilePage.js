@@ -5,6 +5,11 @@ import ProfileImg from './components/ProfileImg';
 import ProfileStat from './components/ProfileStat';
 import ProfileBio from './components/ProfileBio';
 import Stream from './components/Stream';
+import ProfileSideBar from './components/ProfileSideBar';
+import TrendSideBar from './components/TrendSideBar';
+import CopyrightSideBar from './components/CopyrightSideBar';
+import RecFollow from './components/RecFollow';
+import Media from './components/Media';
 
 const ProfilePage = () => (
   <div>
@@ -20,7 +25,23 @@ const ProfilePage = () => (
     <Header />
     <ProfileImg />
     <ProfileStat />
-    <ProfileBio />
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-3">
+          <ProfileBio />
+          <RecFollow />
+          <Media />
+        </div>
+        <div className="col-lg-6">
+          <Stream />
+        </div>
+        <div className="col-lg-3">
+          <ProfileSideBar />
+          <TrendSideBar />
+          <CopyrightSideBar />
+        </div>
+      </div>
+    </div>
   </div>
 );
 

@@ -5,14 +5,14 @@ import Search from '../Search';
 import Logo from '../Logo';
 
 const HeaderWrapper = styled.header`
-width:100%;
-background: #fff;
-display:flex;
+  width:100%;
+  background: #fff;
+  display:flex;
 `;
 const Wrap = styled.div`
-display:flex;
-justify-content: space-between;
-align-items: center;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Header = () => (

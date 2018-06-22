@@ -74,8 +74,6 @@ const Button = styled.button`
   width: 128px;
   height: 39px;
   color: #fff;
-  font-family: HelveticaNeue;
-  font-style: Bold;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -111,37 +109,35 @@ const bio = {
 };
 
 const ProfileBio = props => (
-  <div className="container">
-    <Wrapper>
-      <Section>
-        <User>{bio.name}</User>
-        <Verified image={bio.image} />
-      </Section>
+  <Wrapper>
+    <Section>
+      <User>{bio.name}</User>
+      <Verified image={bio.image} />
+    </Section>
 
-      <Section>
-        <Name>{bio.user}</Name>
-        <Status>{bio.follow}</Status>
-      </Section>
-      <Bio>{bio.text}</Bio>
+    <Section>
+      <Name>{bio.user}</Name>
+      <Status>{bio.follow}</Status>
+    </Section>
+    <Bio>{bio.text}</Bio>
 
-      <Section>
-        <IconMenu image={bio.icolocation} />
-        <Location>{bio.location}</Location>
-      </Section>
+    <Section>
+      <IconMenu image={bio.icolocation} />
+      <Location>{bio.location}</Location>
+    </Section>
 
-      <Section>
-        <IconMenu image={bio.icosite} />
-        <Url to={bio.to}>{bio.site}</Url>
-      </Section>
+    <Section>
+      <IconMenu image={bio.icosite} />
+      <Url to={bio.to}>{bio.site}</Url>
+    </Section>
 
-      <IconMenu image={bio.icojoined} />
-      <Text>{bio.joined}</Text>
-      <ButtonWrapper>
-        <Button primary>Tweet to</Button>
-        <Button primary>Message</Button>
-      </ButtonWrapper>
-    </Wrapper>
-  </div>
+    <IconMenu image={bio.icojoined} />
+    <Text>{bio.joined}</Text>
+    <ButtonWrapper>
+      <Button primary>Tweet to</Button>
+      <Button primary>Message</Button>
+    </ButtonWrapper>
+  </Wrapper>
 );
 
 export default ProfileBio;

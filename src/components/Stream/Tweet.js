@@ -108,7 +108,7 @@ const Link = styled.a`
   cursor:pointer;
   font-size: 25px;
   font-weight: 200;
-  font-style: Light;
+  font-style: light;
   margin-bottom: 13px;
 `;
 
@@ -127,7 +127,6 @@ const Tweet = props => (
       </div>
       {props.bigFont && <BigText>{props.text}</BigText>}
       {!props.bigFont && <Text>{props.text}</Text>}
-      <Link>{props.link}</Link>
       <PostedImage src={props.image} />
 
       <ActionSection>

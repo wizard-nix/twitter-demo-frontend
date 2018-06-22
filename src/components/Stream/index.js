@@ -14,6 +14,11 @@ const Wrappper = styled.div`
   margin-top: 9px;
 `;
 
+const Link = styled.a`
+  text-decoration:none;
+  cursor: pointer;
+`;
+
 const tweets = [
   {
     avatar: avatar,
@@ -27,8 +32,13 @@ const tweets = [
     likes: '47',
     bigFont: true,
     ico: pinned,
-    text: 'We’ve made some more resources for all you wonderful',
-    link: 'everyinteraction.com/resources/ #webdesign #UI',
+    text: (
+      <p
+        dangerouslySetInnerHTML={{
+          __html: 'We’ve made some more resources for all you wonderful <a href="#">#design</a> folk <a href="#">everyinteraction.com/resources/</a> <a href="#">#webdesign</a> <a href="#">#UI</a>',
+        }}
+      />
+    ),
   },
   {
     avatar: avatar,
@@ -42,8 +52,13 @@ const tweets = [
     likes: '2',
     bigFont: true,
     ico: '',
-    text: 'Our new website concept; Taking you from… @ Every Interaction',
-    link: 'instagram.com/p/BNFGrfhBP3M/',
+    text: (
+      <p
+        dangerouslySetInnerHTML={{
+          __html: 'Our new website concept; Taking you from… @ Every Interaction <a href="#">instagram.com/p/BNFGrfhBP3M/</a>',
+        }}
+      />
+    ),
   },
   {
     avatar: avatar,
@@ -57,8 +72,13 @@ const tweets = [
     likes: '0',
     bigFont: false,
     ico: '',
-    text: 'Variable web fonts are coming, and will open a world of opportunities for weight use online',
-    link: 'vilijamis.com',
+    text: (
+      <p
+        dangerouslySetInnerHTML={{
+          __html: 'Variable web fonts are coming, and will open a world of opportunities for weight use online <a href="http://www.vilijamis.com">vilijamis.com</a>',
+        }}
+      />
+    ),
   },
 ];
 

@@ -1,21 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  Route,
+  Redirect,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
+import Helmet from "react-helmet";
+import ProfilePage from "./ProfilePage";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Helmet
+      title="Every Interaction (@EveryInteract) on Twitter"
+      meta={[
+        {
+          name: "description",
+          content:
+            "The latest Tweets from Every Interaction (@EveryInteract). A user-experience design studio in London. We specialise in making the complex simple, the confusing intuitive and the perplexing obvious. London, UK"
+        }
+      ]}
+    />
+    <Router>
+      <Switch>
+        <Route path="/everyinteract" component={ProfilePage} />
+        <Redirect from="/" to="/everyinteract" />
+      </Switch>
+    </Router>
+  </div>
+);
 
 export default App;

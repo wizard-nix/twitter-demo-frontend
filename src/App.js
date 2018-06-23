@@ -11,12 +11,12 @@ import ProfilePage from "./ProfilePage";
 const App = () => (
   <div>
     <Helmet
-      title="Every Interaction (@EveryInteract) on Twitter"
+      title="Twitter. It's what's happening."
       meta={[
         {
           name: "description",
           content:
-            "The latest Tweets from Every Interaction (@EveryInteract). A user-experience design studio in London. We specialise in making the complex simple, the confusing intuitive and the perplexing obvious. London, UK"
+            "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
         }
       ]}
     />

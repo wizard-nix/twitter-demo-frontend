@@ -18,8 +18,7 @@ const ProfilePage = () => (
       meta={[
         {
           name: "description",
-          content:
-            "The latest Tweets from Every Interaction (@EveryInteract). A user-experience design studio in London. We specialise in making the complex simple, the confusing intuitive and the perplexing obvious. London, UK"
+          content: "The latest Tweets from Every Interaction (@EveryInteract)."
         }
       ]}
     />
